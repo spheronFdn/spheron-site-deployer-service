@@ -1,4 +1,4 @@
-## spheron-site-deployer-service
+## Spheron-Site-Deployer-Service
 
 A service to deploy web applications automatically to decentralized storage using Spheron based on blockchain events.
 
@@ -17,8 +17,8 @@ We built the Spheron site deployer Service to:
 
 Follow these steps to set up the Spheron site deployer Service on a local server:
 
-1. Clone the repo: [repository link]
-2. `cd [repo name]`
+1. Clone the repo: https://github.com/spheronFdn/spheron-site-deployer-service.git
+2. `cd spheron-site-deployer-service`
 3. `npm install`
 4. Create a `.env` file based on the `.env-example` file in the repo.
 
@@ -33,7 +33,7 @@ LISTEN_TO_CHANNEL=0xFdBA275E47e3B56A5B5b0dC6765CAdB2D178e21e
 
 # 🔧 Spheron Access Token for authentication and access to Spheron services
 # this is an example access token and wont work
-SPHERON_ACESS_TOKEN=zadsaJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlLZXkiOiI4NjdiYjAxODNhOWViYmFkOGEzMDk3OTAwODkzMzgxMmI4ZjU2NmU0MGM2NmU5NTZmNzMwMjhjYzI0Y2ZiOWEzNTI2ZWRjMmI1ZWZiMTMwMTFlNzUzOWY4YTg5MmM0M2IwNTJhM2QyNGQ1NTI0NWJmYTVkYTg1NDhlMTQ3YjhmNyIsImlhdCI6MTY5ODA3NjkzOCwiaXNzIjoid3d3LnNwaGVyb24ubmV0d29yayJ9.XkAxvG6085PfPtRuhgoukkrB-5TDGVePnedm1oYc1CQ
+SPHERON_ACESS_TOKEN=zadsaJhbGciOiJIUzI1NiIs
 
 # 🌐 GitHub URL for the project repository
 # this is an example link and wont work
@@ -43,9 +43,9 @@ PROJECT_GITHUB_URL=https://github.com/Giri-Spheron/demo-test
 PROJECT_NAME=Testing-demo
 
 # 🌐 Custom Environment Variables for the Web Application
-ENV_VAR1=Hello1
-ENV_VAR2=HEllo2
-ENV_VAR3=HEELO4
+ENV_VAR1=123456789
+ENV_VAR2=123456789
+ENV_VAR3=123456789
 
 ```
 
