@@ -1,0 +1,18 @@
+{
+  "name": "spheron-site-deployer-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "@pushprotocol/restapi": "^1.4.29",
+    "@spheron/site": "^1.0.2",
+    "@spheron/storage": "^2.0.4",
+    "ethers": "5.7"
+  }
+}
