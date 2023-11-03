@@ -23,7 +23,7 @@ Follow these steps to set up the Spheron site deployer Service on a local server
 cd spheron-site-deployer-service
 npm install
 ```
-5. Create a `.env` file based on the `.env-example` file in the repo.
+3. Create a `.env` file based on the `.env-example` file in the repo.
 
 ```
 # 🔑 Ethereum Private Key for signing transactions and data
@@ -47,11 +47,11 @@ ENV_VAR2=xxxx
 ENV_VAR3=xxxx
 
 ```
-5. Learn how to create an access token [here.](https://docs.spheron.network/rest-api/#creating-an-access-token)
-6. Create a Spheron account [here](https://app.spheron.network/#/login).
-7. Learn about deployments from the [Spheron site SDK docs](https://docs.spheron.network/sdk/site/).
-8. Add domain configurations post-deployment, or automate it using the SDK. Reference: [Spheron domain documentation](https://docs.spheron.network/static/projects/domain/).
-9. Start the server:
+4. Learn how to create an access token [here.](https://docs.spheron.network/rest-api/#creating-an-access-token)
+5. Create a Spheron account [here](https://app.spheron.network/#/login).
+6. Learn about deployments from the [Spheron site SDK docs](https://docs.spheron.network/sdk/site/).
+7. Add domain configurations post-deployment, or automate it using the SDK. Reference: [Spheron domain documentation](https://docs.spheron.network/static/projects/domain/).
+8. Start the server:
 ```
 node main.js
 ```
