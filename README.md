@@ -18,41 +18,45 @@ We built the Spheron site deployer Service to:
 Follow these steps to set up the Spheron site deployer Service on a local server:
 
 1. Clone the repo: https://github.com/spheronFdn/spheron-site-deployer-service.git
-2. `cd spheron-site-deployer-service`
-3. `npm install`
-4. Create a `.env` file based on the `.env-example` file in the repo.
+2. Go inside the project directory and install dependencies:
+```
+cd spheron-site-deployer-service
+npm install
+```
+3. Create a `.env` file based on the `.env-example` file in the repo.
 
 ```
 # 🔑 Ethereum Private Key for signing transactions and data
-PRIVATE_KEY=12e4..........
-
+PRIVATE_KEY=xxxx
 
 # 📡 Channel Address for listening to notifications
-LISTEN_TO_CHANNEL=0xFd..........
+LISTEN_TO_CHANNEL=xxxx
 
 # 🔧 Spheron Access Token for authentication and access to Spheron services
-# this is an example access token and wont work
-SPHERON_ACESS_TOKEN=zads..........
+SPHERON_ACESS_TOKEN=xxxx
 
 # 🌐 GitHub URL for the project repository
-PROJECT_GITHUB_URL=
+PROJECT_GITHUB_URL=xxxx
 
 # 📛 Name of the project
 PROJECT_NAME=Spheron-Site-Deployer
 
 # 🌐 Custom Environment Variables for the Web Application
-ENV_VAR1=abcd.........
-ENV_VAR2=1234..........
-ENV_VAR3=aplha..........
+ENV_VAR1=xxxx
+ENV_VAR2=xxxx
+ENV_VAR3=xxxx
 
 ```
-
+4. Learn how to create an access token [here.](https://docs.spheron.network/rest-api/#creating-an-access-token)
 5. Create a Spheron account [here](https://app.spheron.network/#/login).
 6. Learn about deployments from the [Spheron site SDK docs](https://docs.spheron.network/sdk/site/).
 7. Add domain configurations post-deployment, or automate it using the SDK. Reference: [Spheron domain documentation](https://docs.spheron.network/static/projects/domain/).
-8. `node main.js`
+8. Start the server:
+```
+node main.js
+```
 
-yayyy! 🚀
+Yayyy! 🚀
 You're now running a local server that listens for Push protocol notifications to trigger web app deployments on decentralized storage via Spheron.
 
 ### Why you need to run a local server here?
@@ -63,15 +67,13 @@ Running a local server for the Spheron site deployer service is crucial for two 
 
 2. **Decentralization**: In line with Web3 ethos, maintaining your keys locally promotes a decentralized architecture, avoiding reliance on centralized cloud services. This enhances trustlessness and resilience in your operational model.
 
-### How it works ?
+### How it works?
 
 The service leverages local environmental configurations to initialize blockchain interaction tools securely. It uses PushAPI to listen for specific on-chain events and triggers a Spheron-based deployment of your web applications to IPFS when those events occur. The deployment leverages only relevant environmental variables, ensuring efficient and secure automation within the local infrastructure.
 
 ## Help
 
-For help, discussions, or other queries
-[join our community](https://community.spheron.network/).
-[join our discord](https://discord.com/invite/ahxuCtm).
+For help, discussions or any other queries: [Join our Community](https://community.spheron.network/)
 
 ## Version History
 
